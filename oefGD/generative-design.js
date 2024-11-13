@@ -16,14 +16,7 @@ function drawPosters() {
 
     context.fillStyle = "black";
     context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
-
-    context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
-    context.fillRect(Xrect, yrect, width, height);
+    
 
 }
 
