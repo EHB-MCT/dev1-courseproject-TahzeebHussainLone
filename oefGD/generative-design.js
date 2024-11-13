@@ -22,3 +22,19 @@ function drawPosters() {
 	context.fillRect(1000, 550, width, height);
 	context.fillRect(1350, 550, width, height);
 }
+
+function addShapes() {
+    const width = 250;
+	const height = 350;
+
+    drawRandomShapes(200, 50, width, height);
+    drawRandomShapes(550, 50, width, height);
+    drawRandomShapes(1000, 50, width, height);
+    drawRandomShapes(1350, 50, width, height);
+
+    drawRandomShapes(200, 550, width, height);
+    drawRandomShapes(550, 550, width, height);
+    drawRandomShapes(1000, 550, width, height);
+    drawRandomShapes(1350, 550, width, height);
+}
+
