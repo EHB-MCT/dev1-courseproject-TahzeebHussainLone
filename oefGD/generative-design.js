@@ -11,19 +11,19 @@ drawPosters();
 function drawPosters() {
     const width = 250;
     const height = 350;
-    const YRect1 = 50;
-    const YRect2 = 550;
+    const Xrect = (200,550,1000,1350);
+    const yrect = (50,550);
 
     context.fillStyle = "black";
-    context.fillRect(200, YRect1, width, height);
-    context.fillRect(550, YRect1, width, height);
-    context.fillRect(1000, YRect1, width, height);
-    context.fillRect(1350, YRect1, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
 
-    context.fillRect(200, YRect2, width, height);
-    context.fillRect(550, YRect2, width, height);
-    context.fillRect(1000, YRect2, width, height);
-    context.fillRect(1350, YRect2, width, height); 
-   
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+    context.fillRect(Xrect, yrect, width, height);
+
 }
 
