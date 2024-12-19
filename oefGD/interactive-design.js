@@ -127,6 +127,14 @@ function drawShapes(x, y, w, h) {
 	}
 }
 
+// muis reichting groen is traag en muis reichting rood is snel
+drawSpeedIndicators();
+function drawSpeedIndicators() {
+    context.fillStyle = "green";
+    Utils.fillCircle(100, height / 2, 30);
+    context.fillStyle = "red";
+    Utils.fillCircle(width - 100, height / 2, 30);
+}
 
 function drawTriangles(x, y, w, h) {
 	context.fillStyle = Utils.hsl(Math.random() * 360, 100, 50);
@@ -156,4 +164,13 @@ function drawStar(x, y, radius, points = 5) {
 
 	context.closePath();
 	context.fill();
+}
+
+// Met chat gpt gemaakt, op 18 dec: ik begreep niet hoe ik dit stukje moest doen
+function update(timestamp) {
+    if (timestamp - lastTime > delay) {
+        drawPosters();
+        lastTime = timestamp;
+    }
+    requestAnimationFrame(update);
 }
