@@ -127,7 +127,7 @@ function drawShapes(x, y, w, h) {
 	}
 }
 
-// muis reichting groen is traag en muis reichting rood is snel
+// muis richting groen is traag en muis reichting rood is snel
 drawSpeedIndicators();
 function drawSpeedIndicators() {
     context.fillStyle = "green";
